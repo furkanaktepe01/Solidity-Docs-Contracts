@@ -27,7 +27,7 @@ contract SimplePaymentChannel {
         selfdestruct(sender);        
     }
 
-    function extdend(uint256 newExpiration) external {
+    function extend(uint256 newExpiration) external {
 
         require(msg.sender == sender);
 
